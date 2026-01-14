@@ -1,0 +1,13 @@
+{
+  "jupyter-lite-schema-version": 0,
+  "jupyter-config-data": {
+    "disabledExtensions": [
+      "@jupyterlab/extensionmanager-extension",
+      "@jupyterlab/help-extension",
+      "@jupyterlab/hub-extension",
+      "@jupyterlab/news-extension",
+      "@jupyterlab/launcher-extension:about",
+      "@jupyterlite/pyodide-kernel-extension:kernel" 
+    ]
+  }
+}
