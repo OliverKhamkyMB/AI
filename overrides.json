@@ -1,0 +1,9 @@
+{
+  "@jupyterlab/apputils-extension:settings": {
+    "hidden": [
+      "@jupyterlab/debugger-extension:plugin",
+      "@jupyterlab/toc-extension:plugin",
+      "@jupyterlab/running-extension:plugin"
+    ]
+  }
+}
