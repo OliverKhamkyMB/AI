@@ -1,7 +1,13 @@
-name: xeus-kernel
+name: xeus-python-kernel
 channels:
-  - https://repo.prefix.dev/emscripten-forge-dev
-  - https://repo.prefix.dev/conda-forge
+  - https://repo.prefix.dev/emscripten-forge
+  - conda-forge
 dependencies:
   - xeus-python
-  - ipycanvas
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn  # Covers Supervised & Unsupervised Learning
+  - scipy
+  - ipywidgets    # Great for interactive AI demos
