@@ -1,10 +1,10 @@
 name: xeus-python-kernel
 channels:
-  - https://repo.prefix.dev/conda-forge  # Use this for general packages
-  - https://repo.prefix.dev/emscripten-forge # Corrected path
+  - https://repo.prefix.dev/conda-forge
+  - https://repo.prefix.dev/emscripten-forge
   - conda-forge
 dependencies:
-  - python=3.11         # Explicitly set version
+  - python=3.11
   - xeus-python
   - numpy
   - pandas
