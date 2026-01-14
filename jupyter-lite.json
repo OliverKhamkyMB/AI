@@ -1,14 +1,30 @@
 {
   "jupyter-lite-schema-version": 0,
   "jupyter-config-data": {
-    "mode": "single-document"
+    "mode": "single-document",
     "disabledExtensions": [
+      "@jupyterlab/launcher-extension",
       "@jupyterlab/extensionmanager-extension",
+      "@jupyterlab/terminal-extension",
       "@jupyterlab/help-extension",
-      "@jupyterlab/hub-extension",
       "@jupyterlab/news-extension",
-      "@jupyterlab/launcher-extension:about",
-      "@jupyterlite/pyodide-kernel-extension:kernel" 
-    ]
+      "@jupyterlab/hub-extension",
+      "@jupyterlab/inspector-extension",
+      "@jupyterlite/pyodide-kernel-extension:kernel"
+    ],
+    "settingsOverrides": {
+      "@jupyterlab/docmanager-extension:plugin": {
+        "defaultViewers": {
+          "markdown": "Markdown Preview"
+        }
+      },
+      "@jupyterlab/apputils-extension:settings": {
+        "hidden": [
+          "@jupyterlab/debugger-extension:plugin",
+          "@jupyterlab/running-extension:plugin",
+          "@jupyterlab/toc-extension:plugin"
+        ]
+      }
+    }
   }
 }
