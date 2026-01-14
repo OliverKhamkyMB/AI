@@ -1,7 +1,6 @@
 {
   "jupyter-lite-schema-version": 0,
   "jupyter-config-data": {
-    "mode": "single-document",
     "disabledExtensions": [
       "@jupyterlab/launcher-extension",
       "@jupyterlab/extensionmanager-extension",
@@ -14,9 +13,8 @@
     ],
     "settingsOverrides": {
       "@jupyterlab/docmanager-extension:plugin": {
-        "defaultViewers": {
-          "markdown": "Markdown Preview"
-        }
+        "autosave": true,
+        "autosaveInterval": 30
       },
       "@jupyterlab/apputils-extension:settings": {
         "hidden": [
@@ -24,6 +22,9 @@
           "@jupyterlab/running-extension:plugin",
           "@jupyterlab/toc-extension:plugin"
         ]
+      },
+      "@jupyterlab/notebook-extension:tracker": {
+        "recordTiming": false
       }
     }
   }
